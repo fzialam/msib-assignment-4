@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .vh-100 {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex vh-100 justify-content-center align-items-center">
+            <div id="profile" class="d-flex flex-column w-100 border border-rounded p-3 px-5 shadow p-3 mb-5 bg-body-tertiary" >
+                <div class="row text-center">
+                    <h4>Section Profile</h4>
+                </div>
+                <div class="row">
+                    <div class="col-2 mx-4 p-4 text-center">
+                        <img src="https://picsum.photos/150/150" alt="">
+                    </div>
+                    <div class="col-5 mx-4 p-4">
+                        <div>
+                            <h4 id="nama-view" class="fw-bold">Nama Anda</h4>
+                            <span id="role-view">Job</span>
+                        </div>
+                        <div class="mt-4">
+                            <button id="edit" class="btn btn-primary">Edit</button>
+                            <button id="resume" class="btn btn-outline-warning">Resume</button>
+                        </div>
+                    </div>
+                    <div class="col-3 mx-4 p-4" id="other-info">
+                        <table class="table table-borderless  bg-body">
+                            <tbody>
+                                <tr>
+                                    <td class="fw-medium">Availability</td>
+                                    <td>
+                                        <label id="availability-view">Fulltime</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-medium">Usia</td>
+                                    <td>
+                                        <label id="usia-view">19</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-medium">Lokasi</td>
+                                    <td>
+                                        <label id="lokasi-view">Jakarta</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-medium">Pengalaman</td>
+                                    <td>
+                                        <label id="experience-view">2</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-medium">Email</td>
+                                    <td>
+                                        <label id="email-view">email</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="form-edit" class="d-flex flex-column w-75 border border-rounded p-3 shadow p-3 mb-5 bg-body-tertiary d-none">
+                <div class="row text-center">
+                    <h4>Section Form</h4>
+                </div>
+                <form action="" id="myForm">
+                    <div class="mb-2">
+                        <label for="nama" class="form-label fw-medium">Nama</label>
+                        <input type="text" id="nama" class="form-control" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="role" class="form-label fw-medium">Role</label>
+                        <input type="text" id="role" class="form-control" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="availability" class="form-label fw-medium">Availability</label>
+                        <input type="text" id="availability" class="form-control" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="usia" class="form-label fw-medium">Usia</label>
+                        <input type="number" id="usia" class="form-control" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="lokasi" class="form-label fw-medium">Lokasi</label>
+                        <input type="lokasi" id="lokasi" class="form-control" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="experience" class="form-label fw-medium">Years Experience</label>
+                        <input type="number" id="experience" class="form-control" />
+                    </div>
+                    <div class="mb-2">
+                        <label for="email" class="form-label fw-medium">Email</label>
+                        <input type="email" id="email" class="form-control" />
+                    </div>
+                    <div class="my-3 text-center">
+                        <button type="submit" id="submit" class="btn btn-warning w-100">
+                            <span class="fw-medium text-white">SUBMIT</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
